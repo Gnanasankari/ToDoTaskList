@@ -45,3 +45,17 @@ html, body {
 .q2 h3 { left: 12px; }                      
 .q3 h3 { left: 12px; }                     
 .q4 h3 { left: 12px; }                      
+
+
+.plus{
+  position:absolute;
+  top:10px;
+  right:12px;
+  font-size:24px;
+  font-weight:900;
+  color:#000;
+  background:transparent;
+  border:none;
+  cursor:pointer;
+  user-select:none;
+}
