@@ -12,25 +12,44 @@
     <section class="quad q1">
       <h3>Do First</h3>
       <button class="plus" data-q="q1" title="Add to DoFirst" aria-label="Add task to Do First">+</button>
+      <ul class="list" data-list="q1"></ul>
     </section>
 
    
     <section class="quad q2">
       <h3>Delegate</h3>
       <button class="plus" data-q="q2" title="Add to Delegate" aria-label="Add task to Delegate">+</button>
+      <ul class="list" data-list="q2"></ul>
     </section>
 
     
     <section class="quad q3">
       <h3>Schedule</h3>
       <button class="plus" data-q="q3" title="Add to Schedule" aria-label="Add task to Schedule">+</button>
+      <ul class="list" data-list="q3"></ul>
     </section>
 
     
     <section class="quad q4">
       <h3>Eliminate</h3>
       <button class="plus" data-q="q4" title="Add to Eliminate" aria-label="Add task to Eliminate">+</button>
+      <ul class="list" data-list="q4"></ul>
     </section>
+  </div>
+
+
+  <div id="modal" class="modal hidden" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <h4 id="modalTitle">Add Task</h4>
+      <form id="taskForm">
+        <label for="taskInput" class="sr-only">Task Name</label>
+        <input id="taskInput" type="text" placeholder="Task name" required autocomplete="off" />
+        <div class="actions">
+          <button type="button" id="cancelBtn" class="btn-outline">Cancel</button>
+          <button type="submit" class="btn-primary">Add</button>
+        </div>
+      </form>
+    </div>
   </div>
 
   <script src="./scripts/sctipt.js"></script>
