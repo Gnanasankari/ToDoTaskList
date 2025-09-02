@@ -3,70 +3,32 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Eisenhower Matrix – Tasks</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>ToDo TaskLists</title>
+  <link rel="stylesheet" href="./styles/style.css" />
 </head>
 <body>
-  <div class="board" id="board">
-    
-    <div class="axis-x" aria-hidden="true"></div>
-    <div class="axis-y" aria-hidden="true"></div>
-    <div class="label-y-top">URGENT</div>
-    <div class="label-y-bottom">NOT URGENT</div>
-    <div class="label-x-left">NOT IMPORTANT</div>
-    <div class="label-x-right">IMPORTANT</div>
-
+  <div class="board">
    
-    <div class="edge-plus tl">+</div>
-    <div class="edge-plus tr">+</div>
-    <div class="edge-plus bl">+</div>
-    <div class="edge-plus br">+</div>
-
-   
-    <section class="quad" data-q="q1" style="grid-area:1 / 2 / 2 / 3;">
+    <section class="quad q1">
       <h3>Do First</h3>
-      <button class="add-btn tr" data-q="q1" title="Add task to Do First" aria-label="Add task to Do First">+</button>
-      <ul class="list" aria-live="polite"></ul>
-      <div class="quick-add" data-q="q1">
-        <input type="text" placeholder="Add task and press Enter…" />
-        <button>Add</button>
-      </div>
     </section>
 
- 
-    <section class="quad" data-q="q2" style="grid-area:1 / 1 / 2 / 2;">
+   
+    <section class="quad q2">
       <h3>Delegate</h3>
-      <button class="add-btn tl" data-q="q2" title="Add task to Delegate" aria-label="Add task to Delegate">+</button>
-      <ul class="list" aria-live="polite"></ul>
-      <div class="quick-add" data-q="q2">
-        <input type="text" placeholder="Add task and press Enter…" />
-        <button>Add</button>
-      </div>
     </section>
 
     
-    <section class="quad" data-q="q3" style="grid-area:2 / 2 / 3 / 3;">
+    <section class="quad q3">
       <h3>Schedule</h3>
-      <button class="add-btn br" data-q="q3" title="Add task to Schedule" aria-label="Add task to Schedule">+</button>
-      <ul class="list" aria-live="polite"></ul>
-      <div class="quick-add" data-q="q3">
-        <input type="text" placeholder="Add task and press Enter…" />
-        <button>Add</button>
-      </div>
     </section>
 
     
-    <section class="quad" data-q="q4" style="grid-area:2 / 1 / 3 / 2;">
+    <section class="quad q4">
       <h3>Eliminate</h3>
-      <button class="add-btn bl" data-q="q4" title="Add task to Eliminate" aria-label="Add task to Eliminate">+</button>
-      <ul class="list" aria-live="polite"></ul>
-      <div class="quick-add" data-q="q4">
-        <input type="text" placeholder="Add task and press Enter…" />
-        <button>Add</button>
-      </div>
     </section>
   </div>
 
-  <script src="/Scripts/script.js"></script>
+  <script src="./scripts/sctipt.js"></script>
 </body>
 </html>
